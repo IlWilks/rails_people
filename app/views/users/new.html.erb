@@ -1,0 +1,17 @@
+<h1>Create a new user</h1>
+<%= form_for @user do |f| %>
+  <%= f.label :full_name %>
+  <%= f.text_field :full_name %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :gender %>
+  <%= f.text_area :gender %>
+
+  <%= f.label :alive %>
+  <%= f.check_box :alive %>
+
+  <%= f.submit %>
+<% end %>
+<h3><% link_to 'Back to users', users_path %></h3>
