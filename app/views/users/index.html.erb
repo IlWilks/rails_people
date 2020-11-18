@@ -1,8 +1,9 @@
 <h1>List of all users</h1>
 <% @user.each do |user| %>
   <h2><%= user.full_name %></h2>
-  <%= link_to 'Show User', user_path(user) %>
-  
+  <%= link_to 'Show user', user_path(user) %> <br/>
+  <%= link_to 'Edit user', edit_user_path(user) %> 
+  <%= link_to 'Delete user', user_path(user), method: :delete %>
 <% end %>
 <br />
-<h2><%= link_to 'Create a new user', new_user_path %></h2>
+<h3><%= link_to 'Create a new user', new_user_path %></h3>
