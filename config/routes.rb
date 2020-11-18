@@ -1,14 +1,6 @@
 Rails.application.routes.draw do
   # get 'static_pages/home'
   # get 'static_pages/about'
-  # get 'users/index'
-  # get 'users/show'
-  # get 'users/new'
-  # get 'users/index'
-  # get 'users/remove'
-  # get 'users/show'
-  # get 'users/new'
-  # get 'users/edit'
   root 'users#index'
   resources :users
   
